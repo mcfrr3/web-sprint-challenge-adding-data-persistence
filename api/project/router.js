@@ -5,9 +5,11 @@ const Project = require('./model');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.end()
+  res.end();
 });
 
 router.post('/', (req, res) => {
-  res.end()
+  res.end();
 });
+
+module.exports = router;

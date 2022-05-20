@@ -5,9 +5,17 @@ const Resource = require('./model');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.end()
+  Resource.findAll()
+    .then(result => {
+      res.json(result);
+    })
 });
 
 router.post('/', (req, res) => {
-  res.end()
+  Resource.create(req.body)
+    .then(result => {
+      res.json(result);
+    })
 });
+
+module.exports = router;
