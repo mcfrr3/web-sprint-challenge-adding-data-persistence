@@ -5,14 +5,14 @@ exports.findAll = () => {
   return db('resources');
 }
 
-exports.findById = id => {
+exports.findBy = filter => {
   return db('resources')
-    .where('resource_id', id);
+    .where(filter);
 }
 
 exports.create = (resource) => {
   return db('resources').insert(resource)
     .then(result => {
-      return this.findById(result[0]);
+      return this.findBy({ 'resource_id': result[0] }).first();
     });
 }
