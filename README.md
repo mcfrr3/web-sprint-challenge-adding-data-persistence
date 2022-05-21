@@ -114,3 +114,10 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 2. Why do tables need a Primary Key?
 3. What is the name given to a table column that references the Primary Key on another table?
 4. What do we need in order to have a _many to many_ relationship between two tables?
+
+## Answers
+
+1. Relational Databases are structured systems to store persistent data in a way to be able to quickly query and manipulate it. SQL is a standardized language that is used to interact with relational databases.
+2. Tables need primary keys in order to uniquely identify each row.
+3. A foreign key is the name given to a table column that references the primary key on another table.
+4. In order to have a 'many-to-many' relationship between two tables, a third 'relationship' table must be created to create a one-many relationship on either side of it.
